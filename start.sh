@@ -36,6 +36,7 @@ fi
 # Start the installation.
 source $STORAGE_ROOT/yiimp/.yiimp.conf
 source upgrade_warning.sh
+source menu.#!/bin/sh
 
 clear
 echo Upgrade of your YiiMP stratum is now completed.

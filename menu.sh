@@ -6,7 +6,7 @@
 source /etc/functions.sh
 cd $HOME/multipool/yiimp_upgrade
 
-RESULT=$(dialog --stdout --title "Ultimate Crypto-Server YiiMP Updater v1.0" --menu "Choose one" -1 60 3 \
+RESULT=$(dialog --stdout --title "Ultimate Crypto-Server YiiMP Updater v1.01" --menu "Choose one" -1 60 3 \
 1 "Upgrade Stratum server(s) - Run on each stratum server" \
 2 "Upgrade Web Server - Run on web server" \
 3 Exit)
