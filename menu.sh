@@ -6,10 +6,11 @@
 source /etc/functions.sh
 cd $HOME/multipool/yiimp_upgrade
 
-RESULT=$(dialog --stdout --title "Ultimate Crypto-Server YiiMP Updater v1.03" --menu "Choose one" -1 65 3 \
-1 "Upgrade Stratum server(s) - Run on each stratum server" \
-2 "Upgrade Web Server - Run on web server" \
-3 Exit)
+RESULT=$(dialog --stdout --title "Ultimate Crypto-Server YiiMP Updater v1.04" --menu "Choose one" -1 65 4 \
+1 "Upgrade YiiMP Single Server Installation" \
+2 "Upgrade Stratum server(s) - Run on each stratum server" \
+3 "Upgrade Web Server - Run on web server" \
+4 Exit)
 if [ $RESULT = ]
 then
 exit;
@@ -19,17 +20,24 @@ if [ $RESULT = 1 ]
 then
 clear;
 cd $HOME/multipool/yiimp_upgrade
-source up_stratum.sh;
+source single.sh;
 fi
 
 if [ $RESULT = 2 ]
 then
 clear;
 cd $HOME/multipool/yiimp_upgrade
-source up_web.sh;
+source up_stratum.sh;
 fi
 
 if [ $RESULT = 3 ]
+then
+clear;
+cd $HOME/multipool/yiimp_upgrade
+source up_web.sh;
+fi
+
+if [ $RESULT = 4 ]
 then
 clear;
 exit;
