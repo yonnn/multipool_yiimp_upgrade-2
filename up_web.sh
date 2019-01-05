@@ -10,7 +10,6 @@ if [[ ! -e '$STORAGE_ROOT/yiimp/yiimp_setup/yiimp' ]]; then
 sudo rm -r $STORAGE_ROOT/yiimp/yiimp_setup/yiimp
 hide_output sudo git clone ${YiiMPRepo} $STORAGE_ROOT/yiimp/yiimp_setup/yiimp	hide_output sudo git clone ${YiiMPRepo} $STORAGE_ROOT/yiimp/yiimp_setup/yiimp
 else
-sudo rm -r $STORAGE_ROOT/yiimp/yiimp_setup/yiimp
 hide_output sudo git clone ${YiiMPRepo} $STORAGE_ROOT/yiimp/yiimp_setup/yiimp
 fi
 
