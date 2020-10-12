@@ -7,7 +7,7 @@ message_box "Ultimate Crypto-Server Setup Installer" \
 "You have choosen to upgrade your YiiMP server(s)!
 \n\nWith so many custom YiiMP installations out there, this installer will ONLY upgrade the required stratum files.
 \n\nIf your pool has coins that require modifiaction to coinbase.cpp, please submit a request on our github at
-\n\nhttps://github.com/yonnn/cryptopool-builders-yiimp with the required code and we will add it to the stratum build.
+\n\nhttps://github.com/cryptobuks1/yiimp-1 with the required code and we will add it to the stratum build.
 \n\n
 \n\nThis upgrade also will NOT copy any example.stratum.conf files to /home/crypto-data/yiimp/site/stratum/config.
 \n\nThis is done to prevent any overwrites of dedicated port configs you may have.
